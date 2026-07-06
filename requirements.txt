@@ -1,0 +1,80 @@
+# ==========================
+# Core
+# ==========================
+streamlit>=1.46.0
+python-dotenv>=1.0.1
+
+# ==========================
+# LangChain
+# ==========================
+langchain>=0.3.26
+langchain-core>=0.3.66
+langchain-community>=0.3.26
+langchain-text-splitters>=0.3.8
+langgraph>=0.2.74
+
+langchain-tavily>=0.2.11
+
+
+protobuf==4.25.3
+
+
+arxiv>=2.1.0 
+
+# ==========================
+# Mistral AI
+# ==========================
+langchain-mistralai>=0.2.11
+mistralai>=1.8.2
+
+
+
+# ==========================
+# Vector Database
+# ==========================
+chromadb>=0.5.23
+langchain-chroma>=0.2.5
+
+# ==========================
+# Document Loaders
+# ==========================
+pypdf>=5.0.0
+python-docx>=1.1.2
+pymupdf>=1.24.0
+unstructured>=0.16.0
+
+# ==========================
+# Data Handling
+# ==========================
+pandas>=2.2.2
+openpyxl>=3.1.5
+
+# ==========================
+# Search Tools
+# ==========================
+tavily-python>=0.7.10
+requests>=2.32.3
+beautifulsoup4>=4.12.3
+lxml>=5.2.2
+
+# ==========================
+# API Backend
+# ==========================
+fastapi>=0.115.0
+uvicorn>=0.30.0
+
+# ==========================
+# Utilities
+# ==========================
+numpy>=2.2.0
+tqdm>=4.67.0
+loguru>=0.7.2
+pydantic>=2.10.0
+
+# ==========================
+# Optional (Future Features)
+# ==========================
+yt-dlp>=2025.1.26
+pydub>=0.25.1
+faster-whisper>=1.1.1
+Pillow>=11.0.0
