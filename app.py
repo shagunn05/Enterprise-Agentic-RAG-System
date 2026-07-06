@@ -223,6 +223,47 @@ st.markdown("""
     }
     footer {visibility: hidden;}
     #MainMenu {visibility: hidden;}
+   
+</style>
+<style>
+/* Force all text white by default */
+.stApp, .stApp p, .stApp span, .stApp label, .stApp div {
+    color: #ffffff !important;
+}
+
+/* Sidebar text specifically */
+[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+
+/* Expander header text */
+[data-testid="stExpander"] summary p,
+[data-testid="stExpander"] summary span {
+    color: #ffffff !important;
+}
+
+/* File uploader text */
+[data-testid="stFileUploaderDropzone"] span,
+[data-testid="stFileUploaderDropzone"] small,
+[data-testid="stFileUploaderDropzone"] div {
+    color: #ffffff !important;
+}
+
+/* Chat input placeholder + typed text */
+[data-testid="stChatInput"] textarea,
+[data-testid="stChatInput"] textarea::placeholder {
+    color: #ffffff !important;
+}
+
+/* Buttons text stays readable */
+.stButton button {
+    color: #ffffff !important;
+}
+
+/* Markdown headers/text in main area */
+.stMarkdown, .stMarkdown p, .stMarkdown li {
+    color: #ffffff !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
