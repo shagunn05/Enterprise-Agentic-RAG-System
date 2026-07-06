@@ -12,6 +12,12 @@ import sys
 from backend.reports.report_generator import generate_report, save_report_to_file
 load_dotenv()
 
+import os
+
+print("Mistral:", os.getenv("MISTRAL_API_KEY"))
+print("Tavily:", os.getenv("TAVILY_API_KEY"))
+
+print("Mistralai")
 #create database automatically if it doesnot exist
 if not Path("chroma-db").exists():
     print("chroma-db not found. creating database...")
