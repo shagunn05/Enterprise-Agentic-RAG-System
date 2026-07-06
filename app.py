@@ -127,7 +127,7 @@ st.markdown("""
         margin-top: 14px;
     }
 
-    /* ===== Chat input box (the query bar) ===== */
+    /* ===== Chat input box (main query bar) ===== */
     div[data-testid="stChatInput"] {
         border-radius: 12px !important;
         background-color: #1F2937 !important;
@@ -238,7 +238,7 @@ st.markdown("""
         border: 1px solid rgba(56,132,255,0.6) !important;
     }
 
-    /* ===== Force all body text white ===== */
+    /* ===== Force all body text white/light ===== */
     .stApp p, .stApp span, .stApp label, .stApp div {
         color: #E2E8F0;
     }
@@ -281,6 +281,51 @@ st.markdown("""
         background-color: #1F2937 !important;
         color: #ffffff !important;
         border: 1px solid #374151 !important;
+    }
+
+    /* ===== Text input boxes (Web Search, Calculator, arXiv, Report queries) ===== */
+    [data-testid="stTextInput"] input {
+        background-color: #1a1f2e !important;
+        color: #ffffff !important;
+        border: 1px solid #374151 !important;
+        border-radius: 8px !important;
+    }
+    [data-testid="stTextInput"] input::placeholder {
+        color: #9CA3AF !important;
+    }
+
+    /* ===== Text area boxes ===== */
+    [data-testid="stTextArea"] textarea {
+        background-color: #1a1f2e !important;
+        color: #ffffff !important;
+        border: 1px solid #374151 !important;
+        border-radius: 8px !important;
+    }
+    [data-testid="stTextArea"] textarea::placeholder {
+        color: #9CA3AF !important;
+    }
+
+    /* ===== Number input ===== */
+    [data-testid="stNumberInput"] input {
+        background-color: #1a1f2e !important;
+        color: #ffffff !important;
+        border: 1px solid #374151 !important;
+        border-radius: 8px !important;
+    }
+
+    /* ===== Selectbox / dropdown ===== */
+    [data-testid="stSelectbox"] div[data-baseweb="select"] {
+        background-color: #1a1f2e !important;
+        color: #ffffff !important;
+        border: 1px solid #374151 !important;
+    }
+
+    /* ===== Labels above inputs ===== */
+    [data-testid="stTextInput"] label,
+    [data-testid="stTextArea"] label,
+    [data-testid="stNumberInput"] label,
+    [data-testid="stSelectbox"] label {
+        color: #E2E8F0 !important;
     }
 
     footer {visibility: hidden;}
