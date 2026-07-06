@@ -44,6 +44,21 @@ st.markdown("""
         color: #E2E8F0;
         font-family: 'Inter', sans-serif;
     }
+    [data-testid="stHeader"] {
+    background-color: #0B0F19 !important;
+    }
+
+    [data-testid="stAppViewContainer"] {
+       background-color: #0B0F19 !important;
+    }
+
+    [data-testid="stAppViewContainer"] > .main {
+    background-color: #0B0F19 !important;
+    }
+
+    [data-testid="stBottomBlockContainer"] {
+        background-color: #0B0F19 !important;
+    }
     section[data-testid="stSidebar"] {
         background-color: #111827 !important;
         border-right: 1px solid #1F2937;
