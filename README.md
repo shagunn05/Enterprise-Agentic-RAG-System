@@ -7,25 +7,24 @@ An end-to-end Enterprise AI Workspace built with **LangChain, LangGraph, ChromaD
 ## 📸 Project Preview
 
 ### 🏠 Home Dashboard
-<img width="100%" src="images/home.png">
+<img width="100%" src="images/1).Home.png">
 
 ### 📄 PDF Knowledge Base
-<img width="100%" src="images/pdf-upload.png">
+<img width="100%" src="images/2).Pdf-upload.png">
 
 ### 💬 AI Chat
-<img width="100%" src="images/chat.png">
+<img width="100%" src="images/3).Chat.png">
 
 ### 👁️ Vision Intelligence
-<img width="100%" src="images/vision.png">
+<img width="100%" src="images/4).Vision.png">
 
 ### 📊 Report Generation
-<img width="100%" src="images/report.png">
+<img width="100%" src="images/5).Report.png">
 
-### 🌐 Web Search
-<img width="100%" src="images/web-search.png">
+### 🌐 Web Search & 🧮 Calculator
+<img width="100%" src="images/6).Websearch & calculator.png">
 
-### 🧮 Calculator
-<img width="100%" src="images/calculator.png">
+
 
 ---
 
