@@ -7,10 +7,10 @@ An end-to-end Enterprise AI Workspace built with **LangChain, LangGraph, ChromaD
 ## 📸 Project Preview
 
 ### 🏠 Home Dashboard
-<img width="100%" src="images/1).Home.png">
+<img width="100%" src="images/1) .Home.png">
 
 ### 📄 PDF Knowledge Base
-<img width="100%" src="images/2).Pdf-upload.png">
+<img width="100%" src="images/2).Pdf.upload.png">
 
 ### 💬 AI Chat
 <img width="100%" src="images/3).Chat.png">
