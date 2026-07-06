@@ -45,17 +45,14 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
     [data-testid="stHeader"] {
-    background-color: #0B0F19 !important;
+        background-color: #0B0F19 !important;
     }
-
     [data-testid="stAppViewContainer"] {
-       background-color: #0B0F19 !important;
+        background-color: #0B0F19 !important;
     }
-
     [data-testid="stAppViewContainer"] > .main {
-    background-color: #0B0F19 !important;
+        background-color: #0B0F19 !important;
     }
-
     [data-testid="stBottomBlockContainer"] {
         background-color: #0B0F19 !important;
     }
@@ -129,10 +126,28 @@ st.markdown("""
         margin-right: 6px;
         margin-top: 14px;
     }
+
+    /* ===== Chat input box (the query bar) ===== */
     div[data-testid="stChatInput"] {
         border-radius: 12px !important;
         background-color: #1F2937 !important;
+        border: 1px solid #374151 !important;
     }
+    div[data-testid="stChatInput"] > div {
+        background-color: #1F2937 !important;
+    }
+    [data-testid="stChatInputContainer"] {
+        background-color: #1F2937 !important;
+        border: 1px solid #374151 !important;
+    }
+    div[data-testid="stChatInput"] textarea {
+        background-color: #1F2937 !important;
+        color: #ffffff !important;
+    }
+    div[data-testid="stChatInput"] textarea::placeholder {
+        color: #9CA3AF !important;
+    }
+
     .status-badge {
         background: linear-gradient(135deg, #16192b 0%, #111827 100%);
         border: 1px solid #2D3348;
@@ -165,6 +180,7 @@ st.markdown("""
         border-radius: 6px !important;
         font-size: 0.85rem !important;
         transition: all 0.2s ease;
+        color: #ffffff !important;
     }
     button[kind="primary"] {
         background: linear-gradient(90deg, #7F5AF0, #6246EA) !important;
@@ -221,49 +237,54 @@ st.markdown("""
         background: rgba(56,132,255,0.35) !important;
         border: 1px solid rgba(56,132,255,0.6) !important;
     }
+
+    /* ===== Force all body text white ===== */
+    .stApp p, .stApp span, .stApp label, .stApp div {
+        color: #E2E8F0;
+    }
+    [data-testid="stSidebar"] * {
+        color: #ffffff !important;
+    }
+    .stMarkdown, .stMarkdown p, .stMarkdown li {
+        color: #E2E8F0 !important;
+    }
+
+    /* ===== Expander (Upload PDF, Vision Intelligence, etc.) ===== */
+    [data-testid="stExpander"] {
+        background-color: #1a1f2e !important;
+        border: 1px solid #2a2f3e !important;
+        border-radius: 10px !important;
+    }
+    [data-testid="stExpander"] summary {
+        background-color: #1a1f2e !important;
+    }
+    [data-testid="stExpander"] summary p,
+    [data-testid="stExpander"] summary span {
+        color: #ffffff !important;
+    }
+
+    /* ===== File uploader box ===== */
+    [data-testid="stFileUploader"] {
+        background-color: #1a1f2e !important;
+    }
+    [data-testid="stFileUploaderDropzone"] {
+        background-color: #1a1f2e !important;
+        border: 1px dashed #374151 !important;
+        border-radius: 10px !important;
+    }
+    [data-testid="stFileUploaderDropzone"] span,
+    [data-testid="stFileUploaderDropzone"] small,
+    [data-testid="stFileUploaderDropzone"] div {
+        color: #E2E8F0 !important;
+    }
+    [data-testid="stFileUploaderDropzone"] button {
+        background-color: #1F2937 !important;
+        color: #ffffff !important;
+        border: 1px solid #374151 !important;
+    }
+
     footer {visibility: hidden;}
     #MainMenu {visibility: hidden;}
-   
-</style>
-<style>
-/* Force all text white by default */
-.stApp, .stApp p, .stApp span, .stApp label, .stApp div {
-    color: #ffffff !important;
-}
-
-/* Sidebar text specifically */
-[data-testid="stSidebar"] * {
-    color: #ffffff !important;
-}
-
-/* Expander header text */
-[data-testid="stExpander"] summary p,
-[data-testid="stExpander"] summary span {
-    color: #ffffff !important;
-}
-
-/* File uploader text */
-[data-testid="stFileUploaderDropzone"] span,
-[data-testid="stFileUploaderDropzone"] small,
-[data-testid="stFileUploaderDropzone"] div {
-    color: #ffffff !important;
-}
-
-/* Chat input placeholder + typed text */
-[data-testid="stChatInput"] textarea,
-[data-testid="stChatInput"] textarea::placeholder {
-    color: #ffffff !important;
-}
-
-/* Buttons text stays readable */
-.stButton button {
-    color: #ffffff !important;
-}
-
-/* Markdown headers/text in main area */
-.stMarkdown, .stMarkdown p, .stMarkdown li {
-    color: #ffffff !important;
-}
 </style>
 """, unsafe_allow_html=True)
 
